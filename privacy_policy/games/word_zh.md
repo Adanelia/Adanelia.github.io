@@ -118,7 +118,9 @@ Adanelia工作室（以下简称“**我们**”）系移动应用程序“百�
 
 SDK名称   | SDK使用目的  | SDK收集的信息          | 隐私政策链接
 --------- | ------------ | ---------------------  | -------------
-Godot SDK | 游戏运行框架 | Android ID、传感器信息 | [https://godotengine.org/privacy-policy](https://godotengine.org/privacy-policy)
+Godot SDK | 游戏运行框架 | Android ID、传感器列表、加速度传感器、重力传感器、磁场传感器、陀螺仪传感器 | [https://godotengine.org/privacy-policy](https://godotengine.org/privacy-policy)
+
+1. Godot SDK: 游戏启动时获取Android ID([源代码](https://github.com/godotengine/godot/blob/f9ac000d5dc0d1014fa347fb2f23069b294d511a/platform/android/java/lib/src/org/godotengine/godot/GodotIO.java#L168))，以提供获取设备标识符功能。游戏启动时获取传感器列表([源代码](https://github.com/godotengine/godot/blob/f9ac000d5dc0d1014fa347fb2f23069b294d511a/platform/android/java/lib/src/org/godotengine/godot/Godot.java#L565))，游戏运行中获取加速度、重力、磁场、陀螺仪传感器信息([源代码](https://github.com/godotengine/godot/blob/f9ac000d5dc0d1014fa347fb2f23069b294d511a/platform/android/java/lib/src/org/godotengine/godot/Godot.java#L808))，以提供游戏中传感器输入支持。
 
 ## 六、我们如何保护您的个人信息
 
